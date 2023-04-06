@@ -16,13 +16,13 @@
             min-height: 100vh;
             overflow: hidden;
             height: 100vh;
-            width: 100%;
+            width:  100%;
         }
         .boneco
         {
             width: 80px;
-            top: 445px;
-            left: 615px;
+            top:   445px;
+            left:  615px;
             position: absolute;
         }
         
@@ -30,33 +30,33 @@
 <body onmousemove="MoveBoneco(event);">
 
     <map name="mapinha">
-        <area title="Visite o Rio Grande do Sul"    shape="circle" coords="260,440,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">
-        <area title="Visite Santa Catarina"         shape="circle" coords="300,410,20" href="https://pt.wikipedia.org/wiki/Santa_Catarina">
-        <area title="Visite o Paraná"               shape="circle" coords="280,380,20" href="https://pt.wikipedia.org/wiki/Paran%C3%A1">
-        <area title="Visite São Paulo"              shape="circle" coords="310,350,20" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">
-        <area title="Visite o Rio de Janeiro"       shape="circle" coords="400,360,6"  href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">
-        <area title="Visite o Espirito Santo"       shape="circle" coords="430,330,6"  href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
-        <area title="Visite Minas Gerais"           shape="circle" coords="360,310,20" href="https://pt.wikipedia.org/wiki/Minas_Gerais">
-        <area title="Visite o Mato Grosso"          shape="circle" coords="230,235,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso">
-        <area title="Visite o Mato Grosso do Sul"   shape="circle" coords="245,320,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">
-        <area title="Visite Goiás"                  shape="circle" coords="300,285,20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">
-        <area title="Visite Tocantins"              shape="circle" coords="325,195,20" href="https://pt.wikipedia.org/wiki/Tocantins">
-        <area title="Visite o Acre"                 shape="circle" coords="40,190,10"  href="https://pt.wikipedia.org/wiki/Acre">
-        <area title="Visite Amazonas"               shape="circle" coords="115,115,30" href="https://pt.wikipedia.org/wiki/Amazonas#:~:text=Amazonas%20%C3%A9%20uma%20das%2027,Espanha%2C%20Su%C3%A9cia%20e%20Gr%C3%A9cia%20somadas.">
-        <area title="Visite Rondônia"               shape="circle" coords="140,210,15" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">
-        <area title="Visite Roraima"                shape="circle" coords="160,40,15"  href="https://pt.wikipedia.org/wiki/Roraima">
-        <area title="Visite o Pará"                 shape="circle" coords="270,135,30" href="https://pt.wikipedia.org/wiki/Par%C3%A1">
-        <area title="Visite o Amapá"                shape="circle" coords="280,55,15"  href="https://pt.wikipedia.org/wiki/Amap%C3%A1">
-        <area title="Visite o Maranhão"             shape="circle" coords="360,135,20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o#:~:text=Maranh%C3%A3o%20(regi%C3%A3o%20inicialmente%20chamada%20de,do%20Oceano%20Atl%C3%A2ntico%20(norte).">
-        <area title="Visite o Piauí"                shape="circle" coords="385,170,15" href="https://pt.wikipedia.org/wiki/Piau%C3%AD">
-        <area title="Visite o Ceará"                shape="circle" coords="430,135,10" href="https://pt.wikipedia.org/wiki/Cear%C3%A1">
-        <area title="Visite a Bahia"                shape="circle" coords="390,220,20" href="https://pt.wikipedia.org/wiki/Bahia">
-        <area title="Visite o Rio  Grande do Norte" shape="circle" coords="470,150,5"  href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">
-        <area title="Visite a Paraíba"              shape="circle" coords="480,170,5"  href="https://pt.wikipedia.org/wiki/Para%C3%ADba">
-        <area title="Visite Pernambuco"             shape="circle" coords="450,180,5"  href="https://pt.wikipedia.org/wiki/Pernambuco">
-        <area title="Visite Alagoas"                shape="circle" coords="480,200,5"  href="https://pt.wikipedia.org/wiki/Alagoas">
-        <area title="Visite Sergipe"                shape="circle" coords="470,220,5"  href="https://pt.wikipedia.org/wiki/Sergipe">
-        <area title="Visite o Distrio Federal"      shape="circle" coords="325,270,4"  href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)#:~:text=O%20Distrito%20Federal%20%C3%A9%20uma,%C3%A1rea%20de%205%20760%2C784%20km%C2%B2.">
+        <area onmouseover="MostrarRS()" onmouseleave="MostrarOriginal()" title="Visite o Rio Grande do Sul"    shape="circle" coords="260,440,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">
+        <area onmouseover="MostrarSC()" onmouseleave="MostrarOriginal()" title="Visite Santa Catarina"         shape="circle" coords="300,410,20" href="https://pt.wikipedia.org/wiki/Santa_Catarina">
+        <area onmouseover="MostrarPR()" onmouseleave="MostrarOriginal()" title="Visite o Paraná"               shape="circle" coords="280,380,20" href="https://pt.wikipedia.org/wiki/Paran%C3%A1">
+        <area onmouseover="MostrarSP()" onmouseleave="MostrarOriginal()" title="Visite São Paulo"              shape="circle" coords="310,350,20" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">
+        <area onmouseover="MostrarRJ()" onmouseleave="MostrarOriginal()" title="Visite o Rio de Janeiro"       shape="circle" coords="400,360,6"  href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">
+        <area onmouseover="MostrarES()" onmouseleave="MostrarOriginal()" title="Visite o Espirito Santo"       shape="circle" coords="430,330,6"  href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
+        <area onmouseover="MostrarMG()" onmouseleave="MostrarOriginal()" title="Visite Minas Gerais"           shape="circle" coords="360,310,20" href="https://pt.wikipedia.org/wiki/Minas_Gerais">
+        <area onmouseover="MostrarMT()" onmouseleave="MostrarOriginal()" title="Visite o Mato Grosso"          shape="circle" coords="230,235,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso">
+        <area onmouseover="MostrarMS()" onmouseleave="MostrarOriginal()" title="Visite o Mato Grosso do Sul"   shape="circle" coords="245,320,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">
+        <area onmouseover="MostrarGO()" onmouseleave="MostrarOriginal()" title="Visite Goiás"                  shape="circle" coords="300,285,20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">
+        <area onmouseover="MostrarTO()" onmouseleave="MostrarOriginal()" title="Visite Tocantins"              shape="circle" coords="325,195,20" href="https://pt.wikipedia.org/wiki/Tocantins">
+        <area onmouseover="MostrarAC()" onmouseleave="MostrarOriginal()" title="Visite o Acre"                 shape="circle" coords="40,190,10"  href="https://pt.wikipedia.org/wiki/Acre">
+        <area onmouseover="MostrarAM()" onmouseleave="MostrarOriginal()" title="Visite Amazonas"               shape="circle" coords="115,115,30" href="https://pt.wikipedia.org/wiki/Amazonas#:~:text=Amazonas%20%C3%A9%20uma%20das%2027,Espanha%2C%20Su%C3%A9cia%20e%20Gr%C3%A9cia%20somadas.">
+        <area onmouseover="MostrarRO()" onmouseleave="MostrarOriginal()" title="Visite Rondônia"               shape="circle" coords="140,210,15" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">
+        <area onmouseover="MostrarRR()" onmouseleave="MostrarOriginal()" title="Visite Roraima"                shape="circle" coords="160,40,15"  href="https://pt.wikipedia.org/wiki/Roraima">
+        <area onmouseover="MostrarPA()" onmouseleave="MostrarOriginal()" title="Visite o Pará"                 shape="circle" coords="270,135,30" href="https://pt.wikipedia.org/wiki/Par%C3%A1">
+        <area onmouseover="MostrarAP()" onmouseleave="MostrarOriginal()" title="Visite o Amapá"                shape="circle" coords="280,55,15"  href="https://pt.wikipedia.org/wiki/Amap%C3%A1">
+        <area onmouseover="MostrarMA()" onmouseleave="MostrarOriginal()" title="Visite o Maranhão"             shape="circle" coords="360,135,20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o#:~:text=Maranh%C3%A3o%20(regi%C3%A3o%20inicialmente%20chamada%20de,do%20Oceano%20Atl%C3%A2ntico%20(norte).">
+        <area onmouseover="MostrarPI()" onmouseleave="MostrarOriginal()" title="Visite o Piauí"                shape="circle" coords="385,170,15" href="https://pt.wikipedia.org/wiki/Piau%C3%AD">
+        <area onmouseover="MostrarCE()" onmouseleave="MostrarOriginal()" title="Visite o Ceará"                shape="circle" coords="430,135,10" href="https://pt.wikipedia.org/wiki/Cear%C3%A1">
+        <area onmouseover="MostrarBA()" onmouseleave="MostrarOriginal()" title="Visite a Bahia"                shape="circle" coords="390,220,20" href="https://pt.wikipedia.org/wiki/Bahia">
+        <area onmouseover="MostrarRN()" onmouseleave="MostrarOriginal()" title="Visite o Rio  Grande do Norte" shape="circle" coords="470,150,5"  href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">
+        <area onmouseover="MostrarPB()" onmouseleave="MostrarOriginal()" title="Visite a Paraíba"              shape="circle" coords="480,170,5"  href="https://pt.wikipedia.org/wiki/Para%C3%ADba">
+        <area onmouseover="MostrarPE()" onmouseleave="MostrarOriginal()" title="Visite Pernambuco"             shape="circle" coords="450,180,5"  href="https://pt.wikipedia.org/wiki/Pernambuco">
+        <area onmouseover="MostrarAL()" onmouseleave="MostrarOriginal()" title="Visite Alagoas"                shape="circle" coords="480,200,5"  href="https://pt.wikipedia.org/wiki/Alagoas">
+        <area onmouseover="MostrarSE()" onmouseleave="MostrarOriginal()" title="Visite Sergipe"                shape="circle" coords="470,220,5"  href="https://pt.wikipedia.org/wiki/Sergipe">
+        <area onmouseover="MostrarDF()" onmouseleave="MostrarOriginal()" title="Visite o Distrio Federal"      shape="circle" coords="325,270,4"  href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)#:~:text=O%20Distrito%20Federal%20%C3%A9%20uma,%C3%A1rea%20de%205%20760%2C784%20km%C2%B2.">
     </map>
 
     <img src="dexv4yf-16378117-7b36-4343-8975-af339b7475fc.gif" id="boneco" class="boneco">
@@ -73,6 +73,11 @@
         boneco.style.left = (x+1) + "px";
         boneco.style.top = (y+1) + "px";
     }
+    function MostrarRS()
+    {
+        boneco.SRC = "chimarrao.png";
+    }
+
 </script>
 
 </html>
